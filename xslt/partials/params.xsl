@@ -11,4 +11,6 @@
     <xsl:param name="project_logo">images/logo.png</xsl:param>
     <xsl:param name="base_url">https://conrad-ansorge.github.io/ansorge-static/</xsl:param>
     <xsl:param name="data_repo">https://github.com/conrad-ansorge/ansorge-data</xsl:param>
+    <xsl:param name="current-edition">ansorge</xsl:param>
+    <xsl:param name="current-colour">#2C3E50</xsl:param>
 </xsl:stylesheet>
