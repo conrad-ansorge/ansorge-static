@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(git -C /Users/oldfiche/git/ansorge-static status)",
+      "Bash(git -C /Users/oldfiche/git/ansorge-static log --oneline -5)",
+      "Bash(git -C /Users/oldfiche/git/ansorge-static show --stat 4786242)"
     ],
     "deny": [],
     "ask": []
