@@ -16,7 +16,16 @@
                     <xsl:copy-of select="child::*"/>
                 </item>
             </xsl:variable>
-            <xsl:variable name="abbr" select="child::abbr" as="xs:string"/>
+            <xsl:variable name="abbr" as="xs:string">
+                <xsl:choose>
+                    <xsl:when test="not(empty(child::abbr))">
+                        <xsl:value-of select="child::abbr" />
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>PROJEKTNAME</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
             <xsl:choose>
                 <xsl:when
                     test="$idnos-of-current/descendant::tei:idno[@subtype = $abbr][2] and @ana = 'multiple'">

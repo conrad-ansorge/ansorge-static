@@ -327,6 +327,13 @@
             <xsl:call-template name="lod-reihe">
                 <xsl:with-param name="idno" select="$idnos"/>
             </xsl:call-template>
+            <xsl:if test="tei:note">
+                <xsl:apply-templates select="tei:note"/>
+            </xsl:if>
+            <xsl:if test="tei:bibl">
+                <h3 class="mt-5">Buchseiten:</h3>
+                <xsl:apply-templates select="tei:bibl"/>
+            </xsl:if>
             <div class="werke">
                 <xsl:variable name="author-ref" as="xs:string">
                     <xsl:choose>
@@ -1732,4 +1739,37 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+    <xsl:template match="tei:bibl">
+        <xsl:if test="tei:biblScope">
+            <xsl:text>S. </xsl:text>
+            <xsl:for-each select="tei:biblScope">
+                <xsl:choose>
+                    <xsl:when test="@from">
+                        <xsl:value-of select="normalize-space(.)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="@n"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <xsl:choose>
+                    <xsl:when test="position() = last()">
+                        <xsl:text>.</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>, </xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="tei:biblScope">
+        <xsl:choose>
+            <xsl:when test="@from">
+                <xsl:value-of select="normalize-space(.)"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="@n"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 </xsl:stylesheet>
