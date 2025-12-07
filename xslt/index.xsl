@@ -49,7 +49,7 @@
                             <div class="hero-text">
                                 <h1><xsl:value-of select="$project_title"/></h1>
                                 <p class="lead">Diese Seite enthält verschiedene Verzeichnisse und Register aus der folgenden Edition:</p>
-                                <p class="citation">Eike Rathgeber, Christian Heitler, Manuela Schwartz (Hrsg.): <em>Conrad Ansorge 1862–1930. Ein Pianist des Fin de siÃ¨cle in Berlin und Wien</em>. Wiener Veröffentlichungen zur Musikgeschichte, Band 12. Böhlau Verlag, Wien/Köln/Weimar 2017. ISBN 978-3-205-20307-0.</p>
+                                <p class="citation">Eike Rathgeber, Christian Heitler, Manuela Schwartz (Hrsg.): <em>Conrad Ansorge 1862–1930. Ein Pianist des Fin de siècle in Berlin und Wien</em>. Wiener Veröffentlichungen zur Musikgeschichte, Band 12. Böhlau Verlag, Wien/Köln/Weimar 2017. ISBN 978-3-205-20307-0.</p>
                                 <p>Das Buch selbst ist nicht digital verfügbar.</p>
                             </div>
                         </section>

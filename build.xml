@@ -80,4 +80,5 @@
             <include name="**/*.xml"/>
         </fileset>
     </copy>
+    <touch file="${target}/.nojekyll"/>
 </project>
