@@ -27,9 +27,9 @@
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <a class="nav-link" href="toc.html">Editionseinheiten</a>
-                            </li>
+                            </li>-->
 
                             <li class="nav-item dropdown disabled">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Register</a>
@@ -37,26 +37,26 @@
                                     <li>
                                         <a class="dropdown-item" href="listperson.html">Personen</a>
                                     </li>
-                                    <li>
+                                    <!--<li>
                                         <a class="dropdown-item" href="listplace.html">Orte</a>
-                                    </li>
+                                    </li>-->
                                     <li>
                                         <a class="dropdown-item" href="listorg.html">Organisationen</a>
                                     </li>
-                                    <li>
+                                    <!--<li>
                                         <a class="dropdown-item" href="listbibl.html">Werke</a>
-                                    </li>
+                                    </li>-->
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a title="API" class="nav-link" href="api.xml">API</a>
                             </li>
-                            <li class="nav-item">
+                          <!--  <li class="nav-item">
                                 <a title="Suche" class="nav-link" href="search.html">Suche</a>
                             </li>
                             <li class="nav-item">
                                 <a title="Suche" class="nav-link" href="noske-search.html">Noske-Suche</a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>
